@@ -1,3 +1,5 @@
+package FizzBuzz;
+
 import java.util.stream.Stream;
 
 public class FizzBuzz {

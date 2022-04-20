@@ -1,3 +1,4 @@
+import FizzBuzz.FizzBuzz
 import spock.lang.Specification
 
 import java.util.stream.Collectors
@@ -7,7 +8,7 @@ class FizzBuzzTestSpock extends Specification {
 
 //    def "dividable by 3 gives Fizz"() {
 //        when:
-//        String fizzString = new FizzBuzz().generatingFizzBuzz(aNumbers)
+//        String fizzString = new FizzBuzz.FizzBuzz().generatingFizzBuzz(aNumbers)
 //
 //        then:
 //        fizzString == "Fizz"
@@ -16,12 +17,12 @@ class FizzBuzzTestSpock extends Specification {
 //        aNumbers << [3, 9, 12]
 //    }
 //
-//    def "dividable by 3 and 5 gives FizzBuzz"() {
+//    def "dividable by 3 and 5 gives FizzBuzz.FizzBuzz"() {
 //        when:
-//        String fizzString = new FizzBuzz().generatingFizzBuzz(aNumbers)
+//        String fizzString = new FizzBuzz.FizzBuzz().generatingFizzBuzz(aNumbers)
 //
 //        then:
-//        fizzString == "FizzBuzz"
+//        fizzString == "FizzBuzz.FizzBuzz"
 //
 //        where:
 //        aNumbers << [15, 30]
@@ -29,7 +30,7 @@ class FizzBuzzTestSpock extends Specification {
 //
 //    def "Not dividable by 3 or 5 gives Itself"() {
 //        when:
-//        String fizzString = new FizzBuzz().generatingFizzBuzz(aNumbers)
+//        String fizzString = new FizzBuzz.FizzBuzz().generatingFizzBuzz(aNumbers)
 //
 //        then:
 //        fizzString == String.valueOf(aNumbers)
@@ -38,7 +39,7 @@ class FizzBuzzTestSpock extends Specification {
 //        aNumbers << [1, 2, 4]
 //    }
 
-    def "FizzBuzz"() {
+    def "FizzBuzz.FizzBuzz"() {
         when:
         def results = new FizzBuzz().generatingFizzBuzz(Stream.of(aNumber))
                 .collect(Collectors.toList())
@@ -56,8 +57,8 @@ class FizzBuzzTestSpock extends Specification {
         9       || "Fizz"
         12      || "Fizz"
 
-        15      || "FizzBuzz"
-        30      || "FizzBuzz"
+        15      || "FizzBuzz.FizzBuzz"
+        30      || "FizzBuzz.FizzBuzz"
 
         1       || "1"
         2       || "2"

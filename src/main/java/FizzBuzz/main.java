@@ -1,4 +1,4 @@
-/*
+package FizzBuzz;/*
 Ciąg pierwszych 100 liczb na wejściu.
 Jeżeli liczba podzielna na 3 to zamienić ja na Fizz
 Jeżeli liczba podzielna przez 5 to Buzz
@@ -17,7 +17,7 @@ public class main {
 
   }
 
- protected static String generatingFizzBuzz(int aNumber) {
+public static String generatingFizzBuzz(int aNumber) {
     if (aNumber % 5 == 0 && aNumber % 3 == 0) {
       return "FizzBuzz";
     } else if (aNumber % 5 == 0) {

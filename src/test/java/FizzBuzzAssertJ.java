@@ -8,25 +8,25 @@ public class FizzBuzzAssertJ {
 //  @ParameterizedTest
 //  @ValueSource(ints = {3, 6, 9, 12})
 //  void dividedBy3ReturnsFizz(int aNumber){
-//    assertThat(FizzBuzz.generatingFizzBuzz(aNumber)).isEqualTo("Fizz");
+//    assertThat(FizzBuzz.FizzBuzz.generatingFizzBuzz(aNumber)).isEqualTo("Fizz");
 //  }
 //
 //  @ParameterizedTest
 //  @ValueSource(ints = {5, 10, 20, 25})
 //  void dividedBy5ReturnsBuzz(int aNumber){
-//    assertThat(FizzBuzz.generatingFizzBuzz(aNumber)).isEqualTo("Buzz");
+//    assertThat(FizzBuzz.FizzBuzz.generatingFizzBuzz(aNumber)).isEqualTo("Buzz");
 //  }
 //
 //  @ParameterizedTest
 //  @ValueSource(ints = {15,30,45})
 //  void dividedBy3and5ReturnsFizzBuzz(int aNumber){
-//    assertThat(FizzBuzz.generatingFizzBuzz(aNumber)).isEqualTo("FizzBuzz");
+//    assertThat(FizzBuzz.FizzBuzz.generatingFizzBuzz(aNumber)).isEqualTo("FizzBuzz.FizzBuzz");
 //  }
 //
 //  @ParameterizedTest
 //  @ValueSource(ints = {1,2,4})
 //  void NotDividedBy3or5ReturnsItself(int aNumber){
-//    assertThat(FizzBuzz.generatingFizzBuzz(aNumber)).isEqualTo(String.valueOf(aNumber));
+//    assertThat(FizzBuzz.FizzBuzz.generatingFizzBuzz(aNumber)).isEqualTo(String.valueOf(aNumber));
 //  }
 //}
 }
